@@ -1,0 +1,168 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu content"
+    "footer footer";
+    grid-template-columns: 200px 1fr; /* Left column for nav, right column for main content */
+    grid-template-rows: 100px auto 70px; /* Header, main content, footer */
+    gap: 10px;
+    border: none;
+}
+
+.header{
+    grid-area: header;
+    background-color: transparent ;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: black 0px 0px 10px;
+    border: 1px solid transparent;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: black 0px 0px 10px;
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover{
+    background-color: rgb(255, 255, 255);
+}
+.content{
+    grid-area: content;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: black 0px 0px 10px;
+    border: 1px solid transparent;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-rows: auto;
+    }
+    .menu a {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .header {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .content {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .menu {
+        padding: 5px;
+        gap: 5px;
+    }
+    .home-container {
+        padding: 10px;
+    }
+    .home-footer {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: black 0px 0px 10px;
+    }
+}
+
+/* Footer */
+.home-footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 1px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.header, .menu, .content, .footer, .img, table {
+    border: none; /* Removes borders from these specific elements */
+}
+
+body {
+    background-color: rgb(227, 124, 133);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.home-container {
+    border: none;
+}
+
+.to-do-list {
+    border: none;
+}
+
+.image-container{
+    border: none;
+}
+
+/* Style for the "My To-Do List" section */
+.my-to-do-list {
+    border: none; /* Green border */
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #dcd9d9; /* Light gray background */
+}
+
+.my-to-do-list h2 {
+    color: black; 
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.my-to-do-list ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.my-to-do-list ul li {
+    margin: 5px 0; /* Add spacing between list items */
+    font-size: 18px;
+}

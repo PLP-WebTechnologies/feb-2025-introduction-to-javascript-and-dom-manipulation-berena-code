@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>To Do List</title>
+        <style>
+            div {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            img {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="color:rgb(87, 11, 11); font-size: 50px; font-weight: 100px">My To Do List</h1>
+            </div>
+
+            <div class="menu">
+                <a href="#home" style="text-decoration: none; color: #333;">Home</a><br>
+                <a href="#to-do-list" style="text-decoration: none; color: #333;">My To-Do List</a><br>
+                <a href="#images" style="text-decoration: none; color: #333;">Images</a>
+            </div>
+
+            <div class="content">
+                <div class="home-container">
+                    <h1>Welcome to My To Do List</h1>
+                    <p>This is a simple to-do list application where you can keep track of your tasks.</p>
+                </div>
+
+                <div id="to-do-list" class="to-do-list">
+                    <h2>Things you need to do before moving out:</h2>
+                    <p>Moving out is a big step! Here are six key things to do before you make the move:</p>  
+                    <ul style="list-style-type: none;">
+                        <li><input type="checkbox"> Create a Budget & Save Money</li>
+                        <li><input type="checkbox"> Find a Suitable Place to Live</li>     
+                        <li><input type="checkbox"> Secure a Stable Income</li>
+                        <li><input type="checkbox"> Buy Essential Furniture & Household Items</li>
+                        <li><input type="checkbox"> Understand Legal & Rental Agreements</li>
+                        <li><input type="checkbox"> Develop Basic Life Skills</li>
+                    </ul>
+
+                    <p>Are you planning to move out soon, or just preparing for the future?</p>
+                    <p>Either way, it's important to be prepared and have a plan in place.</p>
+                    <p>Good luck!</p>
+
+                    <div id="images" class="image-container">
+                        <img src="moving.jpg" width="200" height="200">
+                        <img src="moving.jpg" width="200" height="200">
+                    </div>
+
+                    <a href="https://www.google.com" id="google">Google</a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h4>&copy; 2025 To Do List</h4>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
